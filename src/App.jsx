@@ -1,15 +1,13 @@
-
-import {Header} from './components/Header'
+import {Header} from './components/Header/Header'
 
 import 'normalize.css';
 
 
-export const  App=() =>{
-
+export const App = () =>{
   return (
-    <div>
+    <>
       <Header />
-    </div>
+    </>
   )
 }
 
