@@ -2,3 +2,5 @@
 @function px-to-rem($size) {
     @return math.div($size, 16) * 1rem;
   }
+
+$header-text-color: #fff;

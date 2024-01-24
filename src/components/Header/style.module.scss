@@ -1,0 +1,40 @@
+@import '../../css/variables/varibales.scss';
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: px-to-rem(56) px-to-rem(190);
+
+	&-intro-background {
+		position: absolute;
+		width: 100%;
+		z-index: -1;
+	}
+
+	&-nav {
+		display: flex;
+		font-size: 18px;
+		line-height: 24px;
+		justify-content: flex-end;
+		color: $header-text-color;
+	}
+	&-nav-ul {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+	&-nav-ul-li {
+		margin: 0 px-to-rem(82);
+		list-style: none;
+	}
+}
+
+.header-text {
+	color: $header-text-color;
+	margin-left: px-to-rem(191);
+	&-heading-paragraph {
+		width: px-to-rem(546);
+		font-size: px-to-rem(16);
+		line-height: px-to-rem(24);
+	}
+}
