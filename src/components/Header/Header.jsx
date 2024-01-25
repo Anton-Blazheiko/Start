@@ -39,11 +39,8 @@ export const Header = () => {
              <div className={cx('header-inputs-with-margin')}>
                 <Input placeholder="What would you like to do?" />
              </div>
-             
           </div>
        
-   
-
     </header>
   );
 }
