@@ -14,6 +14,7 @@ const menuItems = ['Articles', 'Locations', 'Sign in']
 
 export const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
+  
   useEffect(() => {
       window.addEventListener('scroll', checkIsSticky);
       return () => {
