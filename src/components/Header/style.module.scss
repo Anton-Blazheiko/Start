@@ -5,7 +5,6 @@
 		display: flex;
 		justify-content: space-between;
 		padding: px-to-rem(56) px-to-rem(190);
-		font-family: 'Lato';
 	}
 
 	&-intro-background {
@@ -18,7 +17,6 @@
 		display: flex;
 		font-size: px-to-rem(18);
 		line-height: px-to-rem(24);
-		justify-content: flex-end;
 		color: $header-text-color;
 	}
 	&-nav-ul {
@@ -50,13 +48,11 @@
 
 	&-heading-title {
 		font-size: px-to-rem(50);
-		font-family: 'Lato';
 	}
 
 	&-heading-paragraph {
 		width: px-to-rem(546);
 		font-size: px-to-rem(16);
 		line-height: px-to-rem(24);
-		font-family: 'Lato';
 	}
 }

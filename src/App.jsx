@@ -1,6 +1,7 @@
-import { Header } from './components/Header/Header'
-
 import 'normalize.css';
+import '../src/css/general.module.scss';
+
+import { Header } from './components/Header/Header';
 
 
 export const App = () =>{
