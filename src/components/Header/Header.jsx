@@ -1,9 +1,11 @@
+import { useState, useEffect } from 'react';
+import { Input } from '../Input/Input.jsx';
+import Logo from '../../img/svg/Logo.jsx';
+import IntroBackground from '../../img/intro-bg.jpg'
+
 
 import styles from './style.module.scss';
 import classNames from 'classnames/bind';
-import Logo from '../../img/svg/Logo.jsx';
-import IntroBackground from '../../img/intro-bg.jpg'
-import { Input } from '../Input/Input.jsx';
 
 const cx = classNames.bind(styles);
 
@@ -11,14 +13,27 @@ const menuItems = ['Articles', 'Locations', 'Sign in']
 
 
 export const Header = () => {
+  const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+      window.addEventListener('scroll', checkIsSticky);
+      return () => {
+          window.removeEventListener('scroll', checkIsSticky);
+      };
+  });
+
+  const checkIsSticky = () => {
+      const scrollTop = window.scrollY;
+      scrollTop >= 250 ? setIsSticky(true) : setIsSticky(false);
+  };
+
   return (
     <header className={cx('header')}>
       <img  className={cx('header-intro-background')}src={IntroBackground}/>
-      <div className={cx('header-nav-container')}>
+      <div className={cx(`${isSticky ? 'header-nav-container-is-sticky' : 'header-nav-container'}`)}>
      
       <Logo/>
 
-      <nav className={cx('header-nav')}>
+      <nav className={cx(`header-nav`)}>
         <ul className={cx('header-nav-ul')}>
           {menuItems.map(item => {
             return <li className={cx('header-nav-ul-li')} key={item}>{item}</li>
