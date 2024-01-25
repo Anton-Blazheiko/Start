@@ -1,4 +1,29 @@
+@import '../css/variables/varibales.scss';
+
 * {
-	font-family: 'Lato';
 	box-sizing: border-box;
+}
+
+body {
+  font-size: px-to-rem(16);
+  font-family: $font-common;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+input {
+	background: none;
+	outline: none;
+	box-shadow: none;
+	border: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+::placeholder {
+	color: $header-text-color;
+	opacity: 1; /* Firefox */
 }
