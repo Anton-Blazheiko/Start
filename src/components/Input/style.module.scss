@@ -1,21 +1,5 @@
 @import '../../css/variables/varibales.scss';
 
-input {
-	background: none;
-	outline: none;
-	box-shadow: none;
-	border: none;
-}
-
-input:focus {
-	outline: none;
-}
-
-::placeholder {
-	color: $header-text-color;
-	opacity: 1; /* Firefox */
-}
-
 .input {
 	display: flex;
 	align-items: center;
