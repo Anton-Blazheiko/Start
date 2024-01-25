@@ -4,7 +4,7 @@ import styles from './style.module.scss';
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 
- export const Input = ({placeholder, type='text' } ) => (
+ export const Input = ({placeholder, type='text' }) => (
     
     <div className={cx('input')}>
         <CicleIco/>
