@@ -27,15 +27,27 @@
 	&-nav-ul-li {
 		margin: 0 px-to-rem(82);
 		list-style: none;
+		cursor: pointer;
+		transition: all 0.6s;
+		&:hover {
+			color: $menu-li-hover-color;
+		}
 	}
 }
 
 .header-text {
 	color: $header-text-color;
 	margin-left: px-to-rem(191);
+
+	&-heading-title {
+		font-size: px-to-rem(50);
+		font-family: 'Lato';
+	}
+
 	&-heading-paragraph {
 		width: px-to-rem(546);
 		font-size: px-to-rem(16);
 		line-height: px-to-rem(24);
+		font-family: 'Lato';
 	}
 }
