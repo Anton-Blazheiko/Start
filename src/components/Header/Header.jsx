@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Input } from '../Input/Input.jsx';
 import Logo from '../../img/svg/Logo.jsx';
-import IntroBackground from '../../img/intro-bg.jpg'
+
 
 
 import styles from './style.module.scss';
@@ -29,9 +29,7 @@ export const Header = () => {
 
   return (
     <>  
-      <img  className={cx('header-intro-background')}src={IntroBackground}/>
       <header className={cx('header')}>
-      
         <div className={cx(`${isSticky ? 'header-nav-container-is-sticky' : 'header-nav-container'}`)}>
       
         <Logo/>
