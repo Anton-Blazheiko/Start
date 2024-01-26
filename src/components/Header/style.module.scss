@@ -1,10 +1,11 @@
 @import '../../css/variables/varibales.scss';
 
 .header {
+	padding: px-to-rem(56) px-to-rem(190) 0 px-to-rem(190);
 	&-nav-container {
 		display: flex;
 		justify-content: space-between;
-		padding: px-to-rem(56) px-to-rem(190);
+		align-items: center;
 	}
 
 	&-nav-container-is-sticky {
@@ -51,24 +52,25 @@
 	}
 	&-inputs {
 		display: flex;
-		margin-left: px-to-rem(190);
 	}
 	&-inputs-with-margin {
 		margin-left: px-to-rem(60);
 	}
-}
 
-.header-text {
-	color: $header-text-color;
-	margin-left: px-to-rem(191);
+	&-text {
+		margin-top: px-to-rem(176);
+		color: $header-text-color;
 
-	&-heading-title {
-		font-size: px-to-rem(50);
-	}
+		&-heading-title {
+			font-size: px-to-rem(50);
+			margin-bottom: px-to-rem(22);
+		}
 
-	&-heading-paragraph {
-		width: px-to-rem(546);
-		font-size: px-to-rem(16);
-		line-height: px-to-rem(24);
+		&-heading-paragraph {
+			width: px-to-rem(546);
+			font-size: px-to-rem(16);
+			line-height: px-to-rem(24);
+			margin-bottom: px-to-rem(60);
+		}
 	}
 }
