@@ -1,6 +1,5 @@
-
-
 import Intro from '../Intro';
+
 import styles from './style.module.scss';
 import classNames from 'classnames/bind';
 
