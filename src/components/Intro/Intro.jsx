@@ -4,8 +4,8 @@ const cx = classNames.bind(styles);
 
 export const Intro = () => {
   return (
-    <div className={cx('intro-container')}>
-        Intro section
-    </div>
+    <section className={cx('intro')}>
+        <h1 className={cx('intro-title')}>Benefits of Odigo</h1>
+    </section>
   );
 }

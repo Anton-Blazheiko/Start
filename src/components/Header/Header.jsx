@@ -28,7 +28,6 @@ export const Header = () => {
   };
 
   return (
-    <>  
       <header className={cx('header')}>
         <div className={cx(`${isSticky ? 'header-nav-container-is-sticky' : 'header-nav-container'}`)}>
       
@@ -51,11 +50,10 @@ export const Header = () => {
           <div className={cx('header-inputs')}>
             <Input placeholder="What would you like to do?" />
             <div className={cx('header-inputs-with-margin')}>
-              <Input placeholder="What would you like to do?" />
+              <Input placeholder="Where would you like to go?" />
             </div>
           </div>
         </div>
       </header>
-    </>
   );
 }
