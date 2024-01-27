@@ -1,0 +1,16 @@
+@import '../../css/variables/varibales.scss';
+
+.inspired {
+  &-title {
+    font-size: px-to-rem(35);
+    color: $title-text;
+    margin-bottom: px-to-rem(7);
+  }
+
+  &-title-line {
+    display: block;
+    width: px-to-rem(250);
+    height: px-to-rem(2);
+    background: $blue-text-color;
+  }
+}
