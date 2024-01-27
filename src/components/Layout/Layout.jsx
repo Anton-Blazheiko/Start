@@ -6,8 +6,7 @@ import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 
 export const Layout = () => (
-    <main className={cx('main')}>
-        <Intro />
-    </main>
-)
-
+  <main className={cx('main')}>
+    <Intro />
+  </main>
+);
