@@ -1,7 +1,7 @@
 @import '../css/variables/varibales.scss';
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,17 +13,17 @@ body {
 }
 
 input {
-	background: none;
-	outline: none;
-	box-shadow: none;
-	border: none;
+  background: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
 }
 
 input:focus {
-	outline: none;
+  outline: none;
 }
 
 ::placeholder {
-	color: $header-text-color;
-	opacity: 1; /* Firefox */
+  color: $header-text-color;
+  opacity: 1; /* Firefox */
 }

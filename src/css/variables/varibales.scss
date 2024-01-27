@@ -1,10 +1,10 @@
-@use "sass:math";
+@use 'sass:math';
 @function px-to-rem($size) {
-    @return math.div($size, 16) * 1rem;
-  }
+  @return math.div($size, 16) * 1rem;
+}
 
 $font-common: 'Lato';
 $header-text-color: #fff;
 $title-text: #102746;
-$menu-li-hover-color: #A9A9A9;
-$main-background-color: #0E1D28;
+$menu-li-hover-color: #a9a9a9;
+$main-background-color: #0e1d28;
