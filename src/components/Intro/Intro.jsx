@@ -30,8 +30,8 @@ export const Intro = () => {
           return (
             <div key={item.title}>
               <img src={item.imgFile} alt={item.title} />
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
+              <h3 className={cx('intro-benefits-title')}>{item.title}</h3>
+              <p className={cx('intro-benefits-text')}>{item.text}</p>
             </div>
           );
         })}

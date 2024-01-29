@@ -31,17 +31,23 @@ export const Header = () => {
     }
   };
 
+  const toTopClickHandler = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  };
+
   return (
     <header className={cx('header')}>
       <div className={cx(`${isSticky ? 'header-nav-container-is-sticky' : 'header-nav-container'}`)}>
-        <Logo />
+        <span className={cx('header-logo')} onClick={toTopClickHandler}>
+          <Logo />
+        </span>
 
         <nav className={cx(`header-nav`)}>
           <ul className={cx('header-nav-ul')}>
             {menuItems.map((item) => {
               return (
-                <li className={cx('header-nav-ul-li')} key={item.name} onClick={(e) => scrollIntoHandler(e)}>
-                  {item.name}
+                <li className={cx('header-nav-ul-li')} key={item} onClick={(e) => scrollIntoHandler(e)}>
+                  {item}
                 </li>
               );
             })}
