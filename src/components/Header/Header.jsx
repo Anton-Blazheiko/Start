@@ -7,7 +7,7 @@ import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 
-const menuItems = [{ name: 'Articles', linkTo: 'articles' }, { name: 'Locations' }, { name: 'Videos' }];
+const menuItems = ['Articles', 'Locations', 'Videos'];
 
 export const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
