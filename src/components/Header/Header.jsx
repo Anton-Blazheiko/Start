@@ -7,7 +7,7 @@ import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 
-const menuItems = ['Articles', 'Locations', 'Videos'];
+const menuItems = [{ name: 'Articles', linkTo: 'articles' }, { name: 'Locations' }, { name: 'Videos' }];
 
 export const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -24,6 +24,13 @@ export const Header = () => {
     scrollTop >= 250 ? setIsSticky(true) : setIsSticky(false);
   };
 
+  const scrollIntoHandler = (e) => {
+    const element = document.getElementById(e.target.innerText.toLowerCase());
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className={cx('header')}>
       <div className={cx(`${isSticky ? 'header-nav-container-is-sticky' : 'header-nav-container'}`)}>
@@ -33,8 +40,8 @@ export const Header = () => {
           <ul className={cx('header-nav-ul')}>
             {menuItems.map((item) => {
               return (
-                <li className={cx('header-nav-ul-li')} key={item}>
-                  {item}
+                <li className={cx('header-nav-ul-li')} key={item.name} onClick={(e) => scrollIntoHandler(e)}>
+                  {item.name}
                 </li>
               );
             })}
