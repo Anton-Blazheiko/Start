@@ -22,7 +22,7 @@ export const Intro = () => {
   ];
 
   return (
-    <section className={cx('intro')}>
+    <section className={cx('intro')} id="articles">
       <h1 className={cx('intro-title')}>Benefits of Odigo</h1>
 
       <div className={cx('intro-benefits-card')}>
