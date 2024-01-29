@@ -7,6 +7,11 @@
   width: 100%;
   height: 100vh;
   background-size: cover;
+
+  &-logo {
+    cursor: pointer;
+  }
+
   &-nav-container {
     display: flex;
     justify-content: space-between;
@@ -26,7 +31,7 @@
     z-index: 999;
     box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
     background-color: $main-background-color !important;
-    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    transition: 500ms ease-in-out;
   }
 
   &-nav {

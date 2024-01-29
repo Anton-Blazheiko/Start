@@ -1,7 +1,6 @@
 @import '../../css/variables/varibales.scss';
 
 .intro {
-  position: relative;
   margin: px-to-rem(-90) 0 px-to-rem(130);
   background: #fff;
   padding: px-to-rem(100);
@@ -17,5 +16,13 @@
   &-benefits-card {
     display: flex;
     justify-content: space-between;
+  }
+
+  &-benefits-card-title {
+    margin-bottom: px-to-rem(26);
+  }
+
+  &-benefits-text {
+    max-width: px-to-rem(315);
   }
 }
