@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Input } from '../Input/Input.jsx';
+import Input from '../Input';
 import Logo from '../../img/svg/Logo.jsx';
+import { menuItems } from '../../constants/constants.js';
 
 import styles from './style.module.scss';
 import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
-
-const menuItems = ['Articles', 'Locations', 'Videos'];
 
 export const Header = () => {
   const [isSticky, setIsSticky] = useState(false);

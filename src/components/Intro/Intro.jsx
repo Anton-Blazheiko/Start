@@ -1,25 +1,10 @@
 import styles from './style.module.scss';
 import classNames from 'classnames/bind';
+import { infoCard } from '../../constants/constants';
 const cx = classNames.bind(styles);
 
 export const Intro = () => {
-  const infoCard = [
-    {
-      imgFile: '',
-      title: 'Welcome to Odigo!',
-      text: "Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.",
-    },
-    {
-      imgFile: '',
-      title: 'Your Personal Japan Guide',
-      text: "Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.",
-    },
-    {
-      imgFile: '',
-      title: 'Promoting Local Businesses',
-      text: "Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.",
-    },
-  ];
+  
 
   return (
     <section className={cx('intro')} id="articles">
